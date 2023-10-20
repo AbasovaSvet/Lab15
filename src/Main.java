@@ -33,7 +33,7 @@ public class Main {
         double y1 = scan.nextDouble();
         return new Point(x1,y1);
     }
-    public void perimeter(){
+    public double perimeter(ArrayList<Triangle> triangles){
 
     }
 }
