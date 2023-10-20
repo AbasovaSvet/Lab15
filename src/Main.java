@@ -13,7 +13,8 @@ public class Main {
         for (int i = 0; i < size; i++) {
             Triangle t = inputTriangle();
             triangles.add(t);
-        } return triangles;
+        }
+        return triangles;
     }
 
     public static Triangle inputTriangle(){
@@ -21,6 +22,7 @@ public class Main {
         Point p1 = inputPoint(1);
         Point p2 = inputPoint(2);
         Point p3 = inputPoint(3);
+        System.out.println("сторона а "+p1.distance(p2)+"\nсторона б "+p2.distance(p3)+"\nсторона с "+p3.distance(p1));
         return new Triangle(p1, p2, p3);
     }
 
@@ -29,8 +31,7 @@ public class Main {
         System.out.println("Введите координаты "+i+" стороны:");
         double x1 = scan.nextDouble();
         double y1 = scan.nextDouble();
-        Point p1 = new Point(x1,y1);
-        return p1;
+        return new Point(x1,y1);
     }
     public void perimeter(){
 

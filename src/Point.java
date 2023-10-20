@@ -1,8 +1,8 @@
 public class Point {
     double x, y;
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
+    public Point(double x1, double y1) {
+        this.x = x1;
+        this.y = y1;
     }
 //https://www.cyberforum.ru/java-beginners/thread2569120.html?ysclid=lnyda87hld793473214
     public double distance(Point p2){
@@ -21,4 +21,5 @@ public class Point {
                 "(x " + x +
                 ", y " + y+")";
     }
+
 }
