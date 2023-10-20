@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Triangle> triangle = inputTriangleList(2);
         System.out.println(triangle);
+        System.out.println(avgPerimeter(triangle));
     }
     private static ArrayList<Triangle> inputTriangleList(int size){
         System.out.println("Введите "+size+" треугольников:");
@@ -33,7 +34,12 @@ public class Main {
         double y1 = scan.nextDouble();
         return new Point(x1,y1);
     }
-    public double perimeter(ArrayList<Triangle> triangles){
-
+    public static double avgPerimeter(ArrayList<Triangle>triangles){
+        double p = 0;
+        for (Triangle r:triangles) {
+            p += r.perimeter();
+        }
+        p /= triangles.size();
+        return p;
     }
 }

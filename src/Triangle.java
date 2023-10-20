@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Triangle  {
@@ -17,4 +18,10 @@ public class Triangle  {
                 "}\n\n";
     }
     //метод вычесление периметра возвращает числор дабл
+    public double perimeter(){
+        double sidel = a.distance(b);
+        double sidel1 = b.distance(c);
+        double sidel2 = c.distance(a);
+        return sidel+ sidel1+ sidel2;
+    }
 }
